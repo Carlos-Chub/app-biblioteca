@@ -15,7 +15,7 @@ class CreateAuthor extends Component
 
     protected $rules = [
         'names' => 'required|string|min:3', // 'names' es obligatorio y debe tener al menos 3 caracteres
-        'surnames' => 'nullable|string',
+        'surnames' => 'required|string|min:3',
     ];
 
     // public function updated($propertyName){

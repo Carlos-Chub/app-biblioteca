@@ -30,8 +30,11 @@ class BookReader extends Model
     {
         $startDate = Carbon::now()->addDays($startDays)->startOfDay();
         $endDate = Carbon::now()->addDays($endDays)->endOfDay();
-    
+
         return self::with(['reader', 'book'])
+            ->whereHas('reader', function ($q) {
+                $q->whereNull('deleted_at'); // Excluir lectores eliminados
+            })
             ->whereBetween('return_date', [$startDate, $endDate])
             ->where('status', '=', 'assigned_book')
             ->where('whatsapp', '=', 1)
@@ -41,8 +44,11 @@ class BookReader extends Model
     {
         $startDate = Carbon::now()->addDays($startDays)->startOfDay();
         $endDate = Carbon::now()->addDays($endDays)->endOfDay();
-    
+
         return self::with(['reader', 'book'])
+            ->whereHas('reader', function ($q) {
+                $q->whereNull('deleted_at'); // Excluir lectores eliminados
+            })
             ->whereBetween('return_date', [$startDate, $endDate])
             ->where('status', '=', 'assigned_book')
             ->where('email', '=', 1)

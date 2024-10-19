@@ -31,7 +31,7 @@
     <div style="text-align: center; margin-top: 20px;">
         <p style="font-size: 12px; color: #95a5a6;">
             Si tiene alguna pregunta, no dude en contactarnos.<br>
-            Teléfono: (502) 0000-0000 | Email: biblioteca@dominio.com
+            Teléfono: (502) 0000-0000 | Email: bibliojose18@gmail.com
         </p>
     </div>
 </body>
