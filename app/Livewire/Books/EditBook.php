@@ -29,7 +29,7 @@ class Editbook extends Component
     }
     public function render()
     {
-        return view('livewire.books.editbook');
+        return view('livewire.books.edit-book');
     }
     public function editbook($id)
     {

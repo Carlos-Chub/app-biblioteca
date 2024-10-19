@@ -25,7 +25,7 @@ class EditAuthor extends Component
 
     public function render()
     {
-        return view('livewire.authors.editauthor', [
+        return view('livewire.authors.edit-author', [
             'author' => $this->author
         ]);
     }

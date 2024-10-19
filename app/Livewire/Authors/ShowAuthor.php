@@ -39,6 +39,6 @@ class ShowAuthor extends Component
     }
     public function render()
     {
-        return view('livewire.authors.showauthor');
+        return view('livewire.authors.show-author');
     }
 }

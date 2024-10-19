@@ -37,6 +37,6 @@ class CreateAuthor extends Component
     }
     public function render()
     {
-        return view('livewire.authors.createauthor');
+        return view('livewire.authors.create-author');
     }
 }
