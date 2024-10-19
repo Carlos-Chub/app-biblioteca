@@ -21,9 +21,9 @@ class DatabaseSeeder extends Seeder
         $this->call([
             UserSeeder::class,
         ]);
-        Author::factory()->count(10)->create();
-        Book::factory()->count(10)->create();
-        Reader::factory()->count(10)->create();
-        BookReader::factory()->count(10)->create();
+        // Author::factory()->count(10)->create();
+        // Book::factory()->count(10)->create();
+        // Reader::factory()->count(10)->create();
+        // BookReader::factory()->count(10)->create();
     }
 }

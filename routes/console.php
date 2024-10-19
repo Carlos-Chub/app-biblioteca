@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Schedule as FacadesSchedule;
 // FacadesSchedule::command('app:send-book-return-reminders')->daily();
 
 //EJECUCION DIARIA A LAS 8 AM
-FacadesSchedule::command('app:send-whatsapp-message')->dailyAt('13:30');
-FacadesSchedule::command('app:send-book-return-reminders')->dailyAt('13:31');
+FacadesSchedule::command('app:send-whatsapp-message')->dailyAt('08:00');
+FacadesSchedule::command('app:send-book-return-reminders')->dailyAt('08:00');
 //CADA MINUTO [PARA PRUEBAS]
 // FacadesSchedule::command('app:send-whatsapp-message')->everyMinute();
 // FacadesSchedule::command('app:send-book-return-reminders')->everyMinute();
