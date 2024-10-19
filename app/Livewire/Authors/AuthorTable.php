@@ -53,7 +53,7 @@ class AuthorTable extends DataTableComponent
             Column::make("Actualizacion", "updated_at")
                 ->sortable(),
             Column::make(__('Actions'), "id")
-                ->view('livewire.Authors.actions'),
+                ->view('livewire.authors.actions'),
 
 
         ];
